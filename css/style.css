@@ -13,6 +13,7 @@ svg {
 }
 .hero {
   background-image: url(https://cdn.pixabay.com/photo/2017/03/29/11/29/nepal-2184940_960_720.jpg);
+  background-color: rgba(10, 10, 10, 0.9);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 70vh;
@@ -21,10 +22,21 @@ svg {
   display: grid;
   place-items: center;
 }
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, #000000, #000000);
+  opacity: 0.3;
+}
 .hero__title {
   font-size: 5rem;
   color: white;
   text-transform: uppercase;
   font-family: system-ui;
   font-weight: 900;
+  z-index: 1;
 }
