@@ -1,3 +1,4 @@
+/*CSS Resets*/
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,20 @@ svg {
   display: block;
   max-width: 100%;
 }
+/*Navigation*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+.navlist {
+  list-style: none;
+  display: flex;
+}
+.navlink {
+  text-decoration: none;
+}
+/*Hero*/
 .hero {
   background-image: url(https://cdn.pixabay.com/photo/2017/03/29/11/29/nepal-2184940_960_720.jpg);
   background-color: rgba(10, 10, 10, 0.9);
