@@ -19,8 +19,10 @@ nav {
   font-size: 2rem;
 }
 .navlist {
+  flex-grow: 1;
   list-style: none;
   display: flex;
+  justify-content: space-around;
 }
 .navlink {
   text-decoration: none;
