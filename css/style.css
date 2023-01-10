@@ -64,6 +64,7 @@ nav {
   font-size: 5rem;
   color: white;
   text-transform: uppercase;
+  text-align: center;
   font-family: system-ui;
   font-weight: 900;
   z-index: 1;
@@ -76,11 +77,16 @@ nav {
 }
 .content {
   width: 70rem;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 .two-rows {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+.two-rows-reverse {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   gap: 2rem;
 }
 .card-set {
