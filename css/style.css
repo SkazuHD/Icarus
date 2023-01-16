@@ -12,6 +12,11 @@ svg {
   display: block;
   max-width: 100%;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
 /*Utility*/
 .centered {
   text-align: center;
@@ -22,7 +27,8 @@ nav {
   justify-content: space-around;
   font-size: 2rem;
   align-items: center;
-  padding: 0.75rem;
+  padding: 0.5rem;
+  z-index: 2;
 }
 .logo {
   max-width: 100%;
@@ -68,6 +74,12 @@ nav {
   font-family: system-ui;
   font-weight: 900;
   z-index: 1;
+  line-height: 1;
+}
+.hero__sub {
+  font-size: 3.5rem;
+  color: rgb(234, 234, 234);
+  line-height: 1;
 }
 .title {
   text-transform: uppercase;
@@ -83,11 +95,13 @@ nav {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
+  margin-bottom: 5rem;
 }
 .two-rows-reverse {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
+  margin-bottom: 5rem;
 }
 .card-set {
   display: grid;
