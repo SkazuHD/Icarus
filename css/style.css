@@ -64,3 +64,9 @@ nav {
   font-weight: 900;
   z-index: 1;
 }
+.title {
+  font-size: 2.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
