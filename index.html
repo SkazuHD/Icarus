@@ -24,6 +24,35 @@
       href="/img/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
+      integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css"
+      integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css"
+      integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!--Stylsheets-->
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
@@ -34,15 +63,19 @@
     <header>
       <nav>
         <!---Navigation--->
-        <a href="#"><img src="/img/Logo.png" alt="Logo" class="logo" /></a>
-        <ul class="navlist">
-          <li class="navitem"><a href="#icarus" class="navlink">Icarus</a></li>
-          <li class="navitem"><a href="#team" class="navlink">Team</a></li>
-          <li class="navitem">
-            <a href="#contact" class="navlink">Kontakt</a>
-          </li>
-          <li class="navitem"><a href="#" class="navlink">Produkte</a></li>
-        </ul>
+        <div class="container">
+          <a href="#"><img src="/img/Logo.png" alt="Logo" class="logo" /></a>
+          <ul class="navlist">
+            <li class="navitem">
+              <a href="#icarus" class="navlink">Icarus</a>
+            </li>
+            <li class="navitem"><a href="#team" class="navlink">Team</a></li>
+            <li class="navitem">
+              <a href="#contact" class="navlink">Kontakt</a>
+            </li>
+            <li class="navitem"><a href="#" class="navlink">Produkte</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -50,7 +83,7 @@
         <!--Landing Area-->
         <h1 class="hero__title">
           Projekt Icarus <br />
-          <span class="hero__sub"> Lerne zu fliegen ! </span>
+          <span class="hero__sub" id="super"> Lerne zu fliegen ! </span>
         </h1>
       </div>
       <div class="content">
@@ -63,13 +96,11 @@
             <div>
               <h2 class="title">Was ist Icarus</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-                aliquid consectetur quaerat cum voluptates laboriosam
-                perspiciatis repellendus, eveniet tempore enim et commodi in,
-                exercitationem minus ut quis voluptas dolores eligendi maiores
-                dolore dicta impedit? Molestiae vel eveniet minus ducimus, sequi
-                enim unde distinctio ratione, accusamus nulla quos commodi
-                veritatis? Voluptatibus.
+                Icarus ist ein junges dynamisches Unternhemen, dass es sich zur
+                Aufgabe gemacht hat mit inovativen Ideen den Menschen von CO°2
+                ausstößen und der Schwerkraft zu befreien. Mit der neusten
+                Gentechnologie ist es uns gelungen ein Präperat zu erstellen,
+                welches dem Menschen sprichwörtlich Flügel verleiht
               </p>
             </div>
           </div>
@@ -77,13 +108,31 @@
             <div>
               <h2 class="title">Wie funktionierts?</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Expedita autem placeat voluptatum deserunt, recusandae similique
-                distinctio est perferendis exercitationem eius iure laudantium
-                inventore perspiciatis. Et distinctio autem fuga est. Magnam,
-                quaerat, quam quidem voluptatem quis beatae ut laboriosam quos
-                quibusdam, atque sit architecto est. Molestias, unde! Aliquam,
-                deleniti? Distinctio, enim.
+                Die neuste Gentechnologie ermöglichte uns einen Kondensator
+                herzustellen, der eine somatische Genmutation in der
+                menschlichen DNA auslöst. Durch diese Mutation wird die
+                Herstellung von dem Protein ß-Keratin, im menschlichen Körper
+                generiert, wodurch dem Menschen FLügel wachsen. Keratine sind
+                eine Gruppe von faserbildenden Struckturproteinen aus denen
+                unsere Haare, aber Vogel Ferdern bestehen.Zusammengefasst sorgt
+                das ß-Keratin bei Vögeln für den wachstum von Federn. Bei
+                unserem Produkt handelt es sich um eine Tablette die nach der
+                ersten Einnahme, für eine Woche regelmäßig eingenommen werden
+                sollte. Innerhalb eines Monats werden die Flügel schmerzfrei aus
+                ihrem Rücken gewachsen und einsatzbereit sein. Zudem habe Sie
+                wahl, welche Flügel Sie in den Himmel tragen sollen. Insgesamt
+                kann mann zwischen drei Flügel arten entscheiden. Das Bronze
+                Paket sind die Taubenflügel. Für unsere Kunden, die weniger
+                Luftwiederstand und schnellere Flugreflexe besitzen möchten,
+                gibt es das Silber packet mit den Raabenflügeln. Diejenigen, die
+                auf Abenteuer stehen und schnelligkeit, Ausdauer sowie die
+                Flüghöhe auf einem maximalen Level erleben möchten, werden mit
+                dem Goldenen packet , welche die Adlerflügel beinhalten eine
+                neue Welt entdecken. Wenn der Wunsch Flügel zu besitzen
+                nachlässt, gibt es natürlich ein "Gegenmittel". Dieses besteht
+                aus einer weiteren Tablette, die ebenfalls eine Woche lang
+                eingenommen wird und dafür sorgt, dass die Genmutation
+                rückgängig gemacht wird.
               </p>
             </div>
 
@@ -117,24 +166,24 @@
         </div>
         <h2 class="title centered" id="team">Team</h2>
         <div class="card-set">
-          <div class="card">
+          <div class="card centered">
             <img src="https://picsum.photos/450/600" alt="" />
-            <h3 class="card-title">Name</h3>
+            <h3 class="card-title">Jonah Loewnich</h3>
             <p class="card-text">Lorem ipsum dolor sit.</p>
           </div>
-          <div class="card">
+          <div class="card centered">
             <img src="https://picsum.photos/450/600" alt="" />
-            <h3 class="card-title">Name</h3>
+            <h3 class="card-title">Kim Roch</h3>
             <p class="card-text">Lorem ipsum dolor sit.</p>
           </div>
-          <div class="card">
+          <div class="card centered">
             <img src="https://picsum.photos/450/600" alt="" />
-            <h3 class="card-title">Name</h3>
+            <h3 class="card-title">Luca Zurwellen</h3>
             <p class="card-text">Lorem ipsum dolor sit.</p>
           </div>
-          <div class="card">
+          <div class="card centered">
             <img src="https://picsum.photos/450/600" alt="" />
-            <h3 class="card-title">Name</h3>
+            <h3 class="card-title">RIP: Levi Blohm</h3>
             <p class="card-text">Lorem ipsum dolor sit.</p>
           </div>
         </div>
@@ -144,6 +193,30 @@
       </div>
     </main>
     <footer>
+      <div class="social-icons">
+        <a href="https://instagram.com">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="
+        https://twitter.com"
+        >
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://facebook.com">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://youtube.com"> <i class="fa-brands fa-youtube"></i> </a>
+      </div>
+      <div class="downloads">
+        <p class="centered">Downloads</p>
+        <div class="download__links">
+          <a href="/Plakat_Ikarus.png" download>Plakat</a>
+          <a href="radio.mp3" download>Radiospot</a>
+          <a href="quellen.txt" download>Quellen</a>
+        </div>
+      </div>
+
       <!--Footer Stuff-->
     </footer>
   </body>

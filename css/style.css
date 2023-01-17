@@ -17,32 +17,44 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 10rem;
 }
+body {
+  font-family: "Alexandria", sans-serif;
+}
 /*Utility*/
 .centered {
   text-align: center;
 }
 /*Navigation*/
 nav {
+}
+.container {
   display: flex;
   justify-content: space-around;
-  font-size: 2rem;
+  font-size: 1.5rem;
   align-items: center;
   padding: 0.5rem;
   z-index: 2;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 10px 10px rgb(68, 68, 68);
 }
 .logo {
   max-width: 100%;
-  max-height: 4rem;
+  max-height: 2.75rem;
 }
+
 .navlist {
-  flex-grow: 1;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  gap: 3rem;
+  margin-right: 5rem;
+  max-width: 60rem;
 }
 .navlink {
   text-decoration: none;
   color: #000;
+  font-size: 1.125rem;
 }
 /*Hero*/
 .hero {
@@ -71,7 +83,6 @@ nav {
   color: white;
   text-transform: uppercase;
   text-align: center;
-  font-family: system-ui;
   font-weight: 900;
   z-index: 1;
   line-height: 1;
@@ -80,15 +91,19 @@ nav {
   font-size: 3.5rem;
   color: rgb(234, 234, 234);
   line-height: 1;
+  transition: opacity 1s linear;
+}
+.fadeout {
+  transition: opacity 2s linear;
+  opacity: 0;
 }
 .title {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 3rem;
-  font-family: system-ui;
 }
 .content {
-  width: 70rem;
+  max-width: 70rem;
   margin: 5rem auto;
 }
 .two-rows {
@@ -109,4 +124,36 @@ nav {
   gap: 2rem;
 }
 .card {
+}
+/*Footer*/
+footer {
+  padding-top: 3rem;
+  background-color: rgb(51, 51, 100);
+  color: white;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.social-icons a {
+  color: white;
+}
+.social-icons > * {
+  font-size: 2rem;
+}
+.downloads {
+  padding-block: 3rem;
+}
+.download__links {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.download__links a {
+  color: rgb(191, 191, 191);
+  font-size: 0.75rem;
 }
