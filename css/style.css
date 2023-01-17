@@ -17,6 +17,9 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 10rem;
 }
+body {
+  font-family: "Alexandria", sans-serif;
+}
 /*Utility*/
 .centered {
   text-align: center;
@@ -71,7 +74,6 @@ nav {
   color: white;
   text-transform: uppercase;
   text-align: center;
-  font-family: system-ui;
   font-weight: 900;
   z-index: 1;
   line-height: 1;
@@ -85,7 +87,6 @@ nav {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 3rem;
-  font-family: system-ui;
 }
 .content {
   width: 70rem;
