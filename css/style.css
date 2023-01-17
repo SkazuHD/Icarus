@@ -100,7 +100,7 @@ nav {
   opacity: 0.3;
 }
 .hero__title {
-  font-size: 5rem;
+  font-size: clamp(1.95rem, 6.5vw, 5rem);
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   text-align: center;
@@ -109,7 +109,7 @@ nav {
   line-height: 1;
 }
 .hero__sub {
-  font-size: 3.5rem;
+  font-size: clamp(1.5rem, 4.25vw, 3.5rem);
   color: rgb(255, 255, 255);
   line-height: 1;
   transition: opacity 500ms linear;
@@ -121,7 +121,7 @@ nav {
 .title {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: clamp(1.25rem, 5vw, 3rem);
 }
 .content {
   max-width: 70rem;
@@ -160,6 +160,7 @@ nav {
     text-align: center;
   }
   .navlist {
+    overflow-y: hidden;
     display: block;
   }
 }
@@ -187,6 +188,7 @@ footer {
 }
 .social-icons {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 3rem;
