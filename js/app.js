@@ -17,7 +17,6 @@ setInterval(function () {
     index = 0;
   }
 }, "8000");
-
 //FAQ
 var acc = document.getElementsByClassName("accordion");
 var i;
