@@ -24,6 +24,19 @@ body {
 .centered {
   text-align: center;
 }
+.std-text {
+  max-width: 52ch;
+  color: rgb(65, 65, 65);
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+.circular--square {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+
 /*Navigation*/
 nav {
 }
@@ -55,6 +68,11 @@ nav {
   text-decoration: none;
   color: #000;
   font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.navlink:where(:hover, :focus) {
+  color: rgb(81, 81, 81);
 }
 /*Hero*/
 .hero {
@@ -68,6 +86,9 @@ nav {
   display: grid;
   place-items: center;
 }
+.hero__banner {
+  min-height: fit-content;
+}
 .hero::before {
   content: "";
   position: absolute;
@@ -80,7 +101,7 @@ nav {
 }
 .hero__title {
   font-size: 5rem;
-  color: white;
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   text-align: center;
   font-weight: 900;
@@ -89,12 +110,12 @@ nav {
 }
 .hero__sub {
   font-size: 3.5rem;
-  color: rgb(234, 234, 234);
+  color: rgb(255, 255, 255);
   line-height: 1;
-  transition: opacity 1s linear;
+  transition: opacity 500ms linear;
 }
 .fadeout {
-  transition: opacity 2s linear;
+  transition: opacity 1500ms linear;
   opacity: 0;
 }
 .title {
@@ -119,15 +140,24 @@ nav {
   margin-bottom: 5rem;
 }
 .card-set {
+  margin-block: 3rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 3rem;
 }
 .card {
 }
+.card-title {
+  margin-top: 1rem;
+  font-weight: 300;
+}
+.card img {
+  aspect-ratio: 1;
+}
 /*Footer*/
 footer {
-  padding-top: 3rem;
+  padding-block: 3rem 1rem;
   background-color: rgb(47, 54, 75);
   color: white;
 }
@@ -144,7 +174,7 @@ footer {
   font-size: 2rem;
 }
 .downloads {
-  padding-block: 3rem;
+  padding-block: 3rem 2rem;
 }
 .download__links {
   margin-top: 0.5rem;
@@ -156,4 +186,9 @@ footer {
 .download__links a {
   color: rgb(191, 191, 191);
   font-size: 0.75rem;
+}
+.copy {
+  color: rgb(191, 191, 191);
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
