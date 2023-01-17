@@ -8,10 +8,13 @@ let texte = [
 ];
 let index = 0;
 setInterval(function () {
-  console.log(index);
-  heroText.innerText = texte[index];
+  heroText.classList.add("fadeout");
+  setTimeout(function () {
+    heroText.innerText = texte[index];
+    heroText.classList.remove("fadeout");
+  }, "3000");
   index++;
   if (index == texte.length) {
     index = 0;
   }
-}, "5000");
+}, "8000");
