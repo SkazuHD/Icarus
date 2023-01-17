@@ -38,8 +38,6 @@ body {
 }
 
 /*Navigation*/
-nav {
-}
 .container {
   display: flex;
   justify-content: space-around;
@@ -171,14 +169,36 @@ nav {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 3rem;
 }
-.card {
-}
 .card-title {
   margin-top: 1rem;
   font-weight: 300;
 }
 .card img {
   aspect-ratio: 1;
+}
+/*FAQ*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
 /*Footer*/
 footer {
