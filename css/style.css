@@ -45,7 +45,7 @@ nav {
   justify-content: space-around;
   font-size: 1.5rem;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.25rem;
   z-index: 2;
   position: fixed;
   width: 100%;
@@ -138,6 +138,30 @@ nav {
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
   margin-bottom: 5rem;
+}
+@media screen and (max-width: 60rem) {
+  .two-rows,
+  .two-rows-reverse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .two-rows-reverse {
+    flex-direction: column-reverse;
+  }
+  .two-rows img,
+  .two-rows-reverse img {
+    max-height: 20rem;
+  }
+  .content {
+    margin-inline: 1rem;
+  }
+  .title {
+    text-align: center;
+  }
+  .navlist {
+    display: block;
+  }
 }
 .card-set {
   margin-block: 3rem;
