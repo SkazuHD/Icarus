@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 900">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Unbenannter_Verlauf_4);
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: url(#Unbenannter_Verlauf_7);
+      }
+
+      .cls-3 {
+        fill: #1d1d1b;
+        font-size: 120px;
+        letter-spacing: .14em;
+      }
+    </style>
+    <radialGradient id="Unbenannter_Verlauf_7" data-name="Unbenannter Verlauf 7" cx="476.34" cy="366.26" fx="476.34" fy="366.26" r="216.84" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffef26"/>
+      <stop offset=".02" stop-color="#fee921"/>
+      <stop offset=".1" stop-color="#fdd70e"/>
+      <stop offset=".19" stop-color="#fdcb03"/>
+      <stop offset=".28" stop-color="#fdc800"/>
+      <stop offset=".67" stop-color="#f18f34"/>
+      <stop offset=".89" stop-color="#e95f32"/>
+      <stop offset="1" stop-color="#e3312d"/>
+    </radialGradient>
+    <linearGradient id="Unbenannter_Verlauf_4" data-name="Unbenannter Verlauf 4" x1="473.95" y1="63.53" x2="146.12" y2="701.49" gradientTransform="translate(121.08 -8.27) rotate(16.46) scale(1.23 .97)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".29" stop-color="#c1c1c0"/>
+      <stop offset=".94" stop-color="#262625"/>
+      <stop offset=".99" stop-color="#1d1d1b"/>
+    </linearGradient>
+  </defs>
+  <circle class="cls-2" cx="476.34" cy="366.26" r="216.84"/>
+  <text class="cls-3" transform="translate(309.63 726.55)"><tspan x="0" y="0">ICARUS</tspan></text>
+  <path class="cls-1" d="m214.05,635.15c19.9,8.44,67.03-65.63,107.98-61.16,3.82.42,18.32,2,23.46,9.48,3.14,4.56,2.16,9.68,1.97,9.66-.45-.04-9.09-29.24-1-51.18,10.6-28.74,49-42.43,89.89-57.01.84-.3,54.31-19.78,71.1-37.57,17.64-18.69,10.8-26.42,33.5-50.95,20.69-22.36,37.81-37.92,34.67-40.77-3.34-3.03-26.7,11.66-29.92,8.75-4.19-3.79,37.76-26.64,54.96-69.5,13.42-33.44,7.34-68.01,3.45-68.83-2.57-.54-4.76,9.7-19.05,23.55-8.77,8.5-17.48,12.62-51.86,25.28-52.89,19.47-57.9,19.14-72.04,28.4-12.61,8.26-21.24,16.64-26.68,22.67,0,0-2.5,2.78-4.79,5.64-17.86,22.35-31.13,59.05-34.26,58.16-3.05-.87,9.36-35.78-1.04-40.93-4.84-2.4-15.16,5.18-35.8,20.33-25.55,18.76-27.14,29.04-35.17,43.87,0,0,0,0,0,0,0,0-16.51,40.93-5.49,91.48.29,1.33,1.54,6.85,1.37,14.13-.07,2.88-.41,6.02-1.19,9.55-2.18,9.89-6.26,16.84-8.06,19.59,0,0-2.57,3.94-5.95,7.66-33.04,36.33-77.49,50.37-77.49,50.37-7.39,2.33-16.96,4.79-19.24,11.86-1.84,5.72.8,14.97,6.65,17.45Z"/>
+</svg>
