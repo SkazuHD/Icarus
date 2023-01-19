@@ -329,6 +329,14 @@ textarea {
   position: relative;
   font-size: 3rem;
   cursor: pointer;
+  width: 3rem;
+  transition: font-size 200ms linear;
+}
+#slider-left:is(:hover, :focus),
+#slider-right:is(:hover, :focus) {
+  color: #444;
+  font-size: 3.5rem;
+  transition: font-size 200ms linear;
 }
 .slider-image {
   display: none;
