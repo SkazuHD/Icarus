@@ -32,3 +32,38 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+//Product Slider
+let slider_left = document.getElementById("slider-left");
+let slider_right = document.getElementById("slider-right");
+
+slider_left.addEventListener("click", function () {
+  let allImages = document.querySelectorAll(".slider-image");
+  for (let i = 0; i < allImages.length; i++) {
+    if (allImages[i].classList.contains("active")) {
+      allImages[i].classList.remove("active");
+      if (i > 0) {
+        console.log("i>0");
+        allImages[i - 1].classList.add("active");
+        break;
+      } else {
+        allImages[2].classList.add("active");
+        break;
+      }
+    }
+  }
+});
+slider_right.addEventListener("click", function () {
+  let allImages = document.querySelectorAll(".slider-image");
+  for (let i = 0; i < allImages.length; i++) {
+    if (allImages[i].classList.contains("active")) {
+      allImages[i].classList.remove("active");
+      if (i < allImages.length - 1) {
+        allImages[i + 1].classList.add("active");
+        break;
+      } else {
+        allImages[0].classList.add("active");
+        break;
+      }
+    }
+  }
+});

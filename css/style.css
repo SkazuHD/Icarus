@@ -269,3 +269,22 @@ footer {
 .Adress_usw {
   text-align: center;
 }
+.slider {
+  display: flex;
+  max-width: 100%;
+}
+#slider-left,
+#slider-right {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.slider-image {
+  display: none;
+}
+.slider-image.active {
+  display: block;
+  background-color: transparent;
+}
