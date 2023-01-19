@@ -38,8 +38,10 @@
     <!--Stylsheets-->
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/observer.css" />
     <!--JS-->
     <script defer src="/js/app.js"></script>
+    <script defer src="/js/observer.js"></script>
   </head>
   <body>
     <header>
@@ -75,7 +77,7 @@
       </div>
       <div class="content">
         <!--Main Content-->
-        <div id="icarus">
+        <section class="observed" id="icarus">
           <div class="two-rows">
             <div>
               <img src="/img/d1.png" alt="" />
@@ -98,6 +100,8 @@
               </p>
             </div>
           </div>
+        </section>
+        <section class="observed">
           <div class="two-rows-reverse">
             <div>
               <h2 class="title">Wie funktionierts?</h2>
@@ -116,61 +120,63 @@
                 werden die Flügel schmerzfrei aus ihren Schulterblättern gewachsen und einsatzbereit sein.
               </p>
             </div>
-
             <div>
               <img src="/img/DNA.png" alt="" />
             </div>
           </div>
-        </div>
-        <div class="two-rows">
-          <div>
-            <img src="/img/Büro.png" alt="" />
-          </div>
-          <div>
-            <h2 class="title">Über uns</h2>
+        </section>
+        <section class="observed">
+          <div class="two-rows">
+            <div>
+              <img src="/img/Büro.png" alt="" />
+            </div>
+            <div>
+              <h2 class="title">Über uns</h2>
 
-            <p class="std-text">
-              Icarus ist ein Unternehmen, das von vier Gründer*innen 2022 gegründet und aufgebaut wurde. Der Klimawandel
-              schritt stetig voran und die Luft wurde immer dicker, dreckiger und unreiner.<br />
-              Somit hatten wir es uns zum Ziel gesetzt, die Umweltbelastung durch CO2-Emissionen zu reduzieren und eine
-              umweltfreundliche Alternative zu schaffen. <br />Schon lange forschten wir an etwas, das dem Menschen eine
-              bessere Mobilität verschaffen könnte, ohne giftige Rückstände zu verursachen. Durch die fortschreitende
-              Technik und Forschung konnten wir unseren Traum war, werden lassen und dem Menschen eine neue Option
-              geben. <br />Durch die Flügel wird der Mensch auf eine neue Evolutionsebene gehoben, in der der Mensch ein
-              Teil der Natur wird und sich von der Erde befreien kann. <br />Bei der Produktion der Tabletten achten wir
-              natürlich auch auf einen umweltfreundlichen Prozess und faire Löhne für unsere über 100 Mitarbeiter aus
-              aller Welt.<br />
-              Somit steht Icarus für ein innovatives Unternehmen, das versucht, die Welt ein kleines bisschen
-              umweltfreundlicher und besser zu machen.
-            </p>
+              <p class="std-text">
+                Icarus ist ein Unternehmen, das von vier Gründer*innen 2022 gegründet und aufgebaut wurde. Der
+                Klimawandel schritt stetig voran und die Luft wurde immer dicker, dreckiger und unreiner.<br />
+                Somit hatten wir es uns zum Ziel gesetzt, die Umweltbelastung durch CO2-Emissionen zu reduzieren und
+                eine umweltfreundliche Alternative zu schaffen. <br />Schon lange forschten wir an etwas, das dem
+                Menschen eine bessere Mobilität verschaffen könnte, ohne giftige Rückstände zu verursachen. Durch die
+                fortschreitende Technik und Forschung konnten wir unseren Traum war, werden lassen und dem Menschen eine
+                neue Option geben. <br />Durch die Flügel wird der Mensch auf eine neue Evolutionsebene gehoben, in der
+                der Mensch ein Teil der Natur wird und sich von der Erde befreien kann. <br />Bei der Produktion der
+                Tabletten achten wir natürlich auch auf einen umweltfreundlichen Prozess und faire Löhne für unsere über
+                100 Mitarbeiter aus aller Welt.<br />
+                Somit steht Icarus für ein innovatives Unternehmen, das versucht, die Welt ein kleines bisschen
+                umweltfreundlicher und besser zu machen.
+              </p>
+            </div>
           </div>
-        </div>
-        <h2 class="title centered" id="team">Team</h2>
-        <div class="card-set">
-          <div class="card centered">
-            <img class="circular--square" src="/img/team/jonah.png" alt="" />
-            <h3 class="card-title">Jonah Loewnich</h3>
-            <p class="card-text">Lead Developer</p>
+        </section>
+        <section class="observed" id="team">
+          <h2 class="title centered">Team</h2>
+          <div class="card-set">
+            <div class="card centered">
+              <img class="circular--square" src="/img/team/jonah.png" alt="" />
+              <h3 class="card-title">Jonah Loewnich</h3>
+              <p class="card-text">Lead Developer</p>
+            </div>
+            <div class="card centered">
+              <img class="circular--square" src="/img/team/Kim.png" alt="" />
+              <h3 class="card-title">Kim-Monique Roch</h3>
+              <p class="card-text">Lead Scientist</p>
+            </div>
+            <div class="card centered">
+              <img class="circular--square" src="https://picsum.photos/450/450" alt="" />
+              <h3 class="card-title">Luca Zurwellen</h3>
+              <p class="card-text">Lead *IDK*</p>
+            </div>
+            <div class="card centered">
+              <img class="circular--square" src="/img/team/levi.jpg" alt="" />
+              <h3 class="card-title">Levi Blohm</h3>
+              <p class="card-text">In Gedenken an das Unglück</p>
+            </div>
           </div>
-          <div class="card centered">
-            <img class="circular--square" src="/img/team/Kim.png" alt="" />
-            <h3 class="card-title">Kim-Monique Roch</h3>
-            <p class="card-text">Lead Scientist</p>
-          </div>
-          <div class="card centered">
-            <img class="circular--square" src="https://picsum.photos/450/450" alt="" />
-            <h3 class="card-title">Luca Zurwellen</h3>
-            <p class="card-text">Lead *IDK*</p>
-          </div>
-          <div class="card centered">
-            <img class="circular--square" src="/img/team/levi.jpg" alt="" />
-            <h3 class="card-title">Levi Blohm</h3>
-            <p class="card-text">In Gedenken an das Unglück</p>
-          </div>
-        </div>
-
-        <div>
-          <h2 class="title centered" id="contact">Kontakt</h2>
+        </section>
+        <section class="observed" id="contact">
+          <h2 class="title centered">Kontakt</h2>
           <div class="equal-collumns">
             <div class="data">
               <b>Telefon: </b><br />
@@ -193,7 +199,7 @@
               <button type="submit" class="btn-submit">Absenden <i class="fa-solid fa-arrow-right"></i></button>
             </form>
           </div>
-        </div>
+        </section>
       </div>
     </main>
     <footer>
