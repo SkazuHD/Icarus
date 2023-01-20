@@ -38,15 +38,19 @@ let slider_right = document.getElementById("slider-right");
 
 slider_left.addEventListener("click", function () {
   let allImages = document.querySelectorAll(".slider-image");
+  let allInfo = document.querySelectorAll(".info-item");
   for (let i = 0; i < allImages.length; i++) {
     if (allImages[i].classList.contains("active")) {
       allImages[i].classList.remove("active");
+      allInfo[i].classList.remove("activeInfo");
       if (i > 0) {
         console.log("i>0");
         allImages[i - 1].classList.add("active");
+        allInfo[i - 1].classList.add("activeInfo");
         break;
       } else {
         allImages[2].classList.add("active");
+        allInfo[2].classList.add("activeInfo");
         break;
       }
     }

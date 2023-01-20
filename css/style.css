@@ -343,7 +343,11 @@ textarea {
 .slider-image {
   display: none;
 }
-.slider-image.active {
+.slider-image.active,
+.info-item.activeInfo {
   display: block;
   background-color: transparent;
+}
+.info-item {
+  display: none;
 }
