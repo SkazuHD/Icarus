@@ -67,10 +67,6 @@ body {
 .nav-transparent .navlink {
   color: white;
 }
-.nav-transparent .navlink:where(:hover, :focus) {
-  color: var(--color-accent);
-  border-bottom: 1px solid var(--color-accent);
-}
 .logo {
   max-width: 100%;
   max-height: 2.75rem;
@@ -94,18 +90,52 @@ body {
 .navlink:where(:hover, :focus) {
   color: var(--color-accent);
   border-bottom: 2px solid var(--color-accent);
-  border-image: linear-gradient(0.25turn, rgb(56, 2, 155, 0), var(--color-accent), var(--color-accent), rgb(56, 2, 155, 0)) 1;
+  border-image: linear-gradient(
+      0.25turn,
+      rgb(56, 2, 155, 0),
+      var(--color-accent),
+      var(--color-accent),
+      rgb(56, 2, 155, 0)
+    )
+    1;
+  transition: all 200ms ease-in-out;
+}
+.nav-transparent .navlink:where(:hover, :focus) {
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
+  border-image: linear-gradient(
+      0.25turn,
+      rgb(56, 2, 155, 0),
+      var(--color-accent),
+      var(--color-accent),
+      rgb(56, 2, 155, 0)
+    )
+    1;
   transition: all 200ms ease-in-out;
 }
 .navlink.active {
   border-bottom: 1px solid var(--color-accent);
-  border-image: linear-gradient(0.25turn, rgb(56, 2, 155, 0), var(--color-accent), var(--color-accent), rgb(56, 2, 155, 0)) 1;
+  border-image: linear-gradient(
+      0.25turn,
+      rgb(56, 2, 155, 0),
+      var(--color-accent),
+      var(--color-accent),
+      rgb(56, 2, 155, 0)
+    )
+    1;
   transition: all 200ms ease-in-out;
 }
 .navlink.active:where(:hover, :focus) {
   color: var(--color-accent);
   border-bottom: 2px solid var(--color-accent);
-  border-image: linear-gradient(0.25turn, rgb(56, 2, 155, 0), var(--color-accent), var(--color-accent), rgb(56, 2, 155, 0)) 1;
+  border-image: linear-gradient(
+      0.25turn,
+      rgb(56, 2, 155, 0),
+      var(--color-accent),
+      var(--color-accent),
+      rgb(56, 2, 155, 0)
+    )
+    1;
   transition: all 200ms ease-in-out;
 }
 /*Hero*/
