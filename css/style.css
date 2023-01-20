@@ -402,14 +402,13 @@ textarea {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   border-radius: 0.5rem;
-  border-color: hsl(120, 100%, 32%);
+  border: none;
   transition: all 250ms linear;
   cursor: pointer;
 }
 .btn-buy:where(:hover, :focus) {
   transition: all 250ms linear;
   background-color: hsl(120, 100%, 38%);
-  border-color: hsl(120, 100%, 38%);
 }
 .slider {
   display: flex;
@@ -446,7 +445,7 @@ textarea {
 .info-item.activeInfo {
   display: grid;
   gap: 0.7rem;
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(249, 249, 249);
   padding: 1.2rem;
   border-radius: 1rem;
 }
