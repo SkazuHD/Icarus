@@ -191,7 +191,8 @@ body {
   font-weight: 300;
 }
 .card img {
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
+  max-width: 100%;
 }
 /*FAQ*/
 .accordion {
@@ -266,7 +267,7 @@ footer {
   font-size: 0.75rem;
   text-transform: uppercase;
 }
-#contact {
+#contact .title {
   margin-bottom: 3rem;
 }
 label {
@@ -286,25 +287,61 @@ textarea {
   border: none;
   border-bottom: 1px solid #777;
   outline: none;
-  max-width: 25rem;
   width: 100%;
 }
 textarea {
   resize: none;
   min-height: 2rem;
 }
-.flex-center {
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
 .btn-submit {
-  padding-block: 0.5em;
-  padding-inline: 0.7em;
+  display: block;
+  margin: 0 auto;
+  padding-block: 0.75em;
+  padding-inline: 0.95em;
   font-size: 1.1rem;
-  border-radius: 100vmax;
-  background-color: rgb(236, 118, 28);
+  border-radius: 3rem;
+  background-color: rgb(213, 117, 44);
   border: none;
   text-transform: uppercase;
-  box-shadow: 3px 3px 5px rgb(66, 65, 63);
+  /* box-shadow: 2px 2px 2px rgb(66, 65, 63); */
+  color: white;
+  transition: background-color 300ms linear;
+  cursor: pointer;
+  border: 1px solid rgb(255, 111, 0);
+}
+.btn-submit:where(:hover, :focus) {
+  color: rgb(255, 111, 0);
+  background-color: white;
+  border: 1px solid rgb(255, 111, 0);
+  transition: background-color 300ms linear;
+}
+.btn-submit:focus {
+  outline: 1px solid black;
+}
+.slider {
+  display: flex;
+  max-width: 100%;
+}
+#slider-left,
+#slider-right {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  font-size: 3rem;
+  cursor: pointer;
+  width: 3rem;
+  transition: font-size 200ms linear;
+}
+#slider-left:is(:hover, :focus),
+#slider-right:is(:hover, :focus) {
+  color: #444;
+  font-size: 3.5rem;
+  transition: font-size 200ms linear;
+}
+.slider-image {
+  display: none;
+}
+.slider-image.active {
+  display: block;
+  background-color: transparent;
 }
