@@ -295,12 +295,16 @@ section {
   content: "\2796";
 }
 .panel {
+  line-height: 1.5;
   color: var(--color-text);
   padding: 0 18px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+.panel p {
+  padding-block: 1rem;
 }
 /*Footer*/
 footer {
