@@ -58,14 +58,21 @@ slider_left.addEventListener("click", function () {
 });
 slider_right.addEventListener("click", function () {
   let allImages = document.querySelectorAll(".slider-image");
+  let allInfo = document.querySelectorAll(".info-item");
   for (let i = 0; i < allImages.length; i++) {
     if (allImages[i].classList.contains("active")) {
       allImages[i].classList.remove("active");
+      allInfo[i].classList.remove("activeInfo");
+
       if (i < allImages.length - 1) {
         allImages[i + 1].classList.add("active");
+        allInfo[i + 1].classList.add("activeInfo");
+
         break;
       } else {
         allImages[0].classList.add("active");
+        allInfo[0].classList.add("activeInfo");
+
         break;
       }
     }
