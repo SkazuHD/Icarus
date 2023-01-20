@@ -9,11 +9,29 @@ cpYear.innerText = currentYear;
 let nav = document.getElementById("nav-container");
 
 window.onscroll = function () {
-  if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
+  if (document.body.scrollTop >= 180 || document.documentElement.scrollTop >= 180) {
     nav.classList.remove("nav-transparent");
   } else {
     nav.classList.add("nav-transparent");
   }
+
+  // if (document.body.scrollTop >= 800 || document.documentElement.scrollTop >= 800) {
+  //   document.getElementById("nav-icarus").classList.remove("active");
+  //   document.getElementById("nav-team").classList.remove("active");
+  //   document.getElementById("nav-contact").classList.add("active");
+  // } else if (document.body.scrollTop >= 600 || document.documentElement.scrollTop >= 600) {
+  //   document.getElementById("nav-icarus").classList.remove("active");
+  //   document.getElementById("nav-contact").classList.remove("active");
+  //   document.getElementById("nav-team").classList.add("active");
+  // } else if (document.body.scrollTop >= 500 || document.documentElement.scrollTop >= 500) {
+  //   document.getElementById("nav-icarus").classList.add("active");
+  //   document.getElementById("nav-team").classList.remove("active");
+  //   document.getElementById("nav-contact").classList.remove("active");
+  // } else {
+  //   document.getElementById("nav-icarus").classList.remove("active");
+  //   document.getElementById("nav-team").classList.remove("active");
+  //   document.getElementById("nav-contact").classList.remove("active");
+  // }
 };
 //Hero
 let texte = ["Lerne zu Fliegen !", "The Future is in the air !", "#LearnToFly", "Hol dir die Freiheit !"];
