@@ -26,9 +26,10 @@ body {
 }
 .std-text {
   max-width: 52ch;
-  color: rgb(65, 65, 65);
+  color: rgb(56, 56, 56);
   margin-bottom: 1rem;
   line-height: 1.15;
+  font-weight: 300;
 }
 .circular--square {
   border-top-left-radius: 50% 50%;
