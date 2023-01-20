@@ -213,6 +213,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   gap: 3rem;
+  max-width: 100%;
 }
 .download-list li {
   margin-left: 3rem;
