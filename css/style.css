@@ -258,6 +258,9 @@ section {
   aspect-ratio: 1/1;
   max-width: 100%;
 }
+#team {
+  margin-bottom: 20rem;
+}
 /*FAQ*/
 .accordion {
   background-color: #eee;
@@ -413,3 +416,18 @@ textarea {
 .info-item {
   display: none;
 }
+/* ::-webkit-scrollbar {
+  display: none;
+}
+.content {
+  overflow-y: auto;
+  scrollbar-width: none;
+  scroll-snap-type: y mandatory;
+}
+section {
+  scroll-snap-align: center;
+}
+.content,
+section {
+  height: 100vh;
+} */
