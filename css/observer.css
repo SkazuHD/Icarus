@@ -9,9 +9,21 @@
   filter: blur(0);
   transform: translateX(0);
 }
-.observed#team {
+.observed.card {
   transform: translateX(-50%);
 }
-.show#team {
+.show.card {
   transform: translateX(0);
+}
+.show.card:nth-child(4) {
+  transition-delay: 200ms;
+}
+.show.card:nth-child(3) {
+  transition-delay: 350ms;
+}
+.show.card:nth-child(2) {
+  transition-delay: 500ms;
+}
+.show.card:nth-child(1) {
+  transition-delay: 650ms;
 }

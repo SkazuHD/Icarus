@@ -23,6 +23,9 @@ html {
 body {
   font-family: "Alexandria", sans-serif;
 }
+section {
+  margin-bottom: 12rem;
+}
 /*Utility*/
 .centered {
   text-align: center;
