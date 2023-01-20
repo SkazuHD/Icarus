@@ -42,8 +42,10 @@
     <!--Stylsheets-->
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/observer.css" />
     <!--JS-->
     <script defer src="/js/app.js"></script>
+    <script defer src="/js/observer.js"></script>
   </head>
   <body>
     <header>
@@ -92,43 +94,45 @@
           <div class="info-item">Flügel 3</div>
         </div>
 
-        <div class="faq">
-          <h2 class="title centered">Häufige Fragen (FAQ)</h2>
-          <button class="accordion">Wie läuft der Kaufprozess?</button>
-          <div class="panel">
-            <p>
-              Sie suchen sich eines der Pakete Bronze, Silber, Gold mit dem jeweiligen Flügel aus und bestellen ihre Flügel online, oder in
-              einer unserer Filialen. Nach einem persönlichen oder telefonischen Gespräch, über die Einnahme der Tablette, wird ihnen diese
-              ausgehändigt und der Kaufprozess ist abgeschlossen.
-            </p>
-          </div>
+        <section id="faq">
+          <h2 class="title centered observed">Häufige Fragen (FAQ)</h2>
+          <div class="observed">
+            <button class="accordion">Wie läuft der Kaufprozess?</button>
+            <div class="panel">
+              <p>
+                Sie suchen sich eines der Pakete Bronze, Silber, Gold mit dem jeweiligen Flügel aus und bestellen ihre Flügel online, oder
+                in einer unserer Filialen. Nach einem persönlichen oder telefonischen Gespräch, über die Einnahme der Tablette, wird ihnen
+                diese ausgehändigt und der Kaufprozess ist abgeschlossen.
+              </p>
+            </div>
 
-          <button class="accordion">Wie verläuft die Einnahme ?</button>
-          <div class="panel">
-            <p>
-              Wenn Sie die Tablette abgeholt haben, sollte diese nach der ersten Einnahme, für eine Woche lang, regelmäßig eingenommen
-              werden. Innerhalb eines Monats wachsen die Flügel schmerzfrei aus ihrem Rücken.
-            </p>
-          </div>
+            <button class="accordion">Wie verläuft die Einnahme ?</button>
+            <div class="panel">
+              <p>
+                Wenn Sie die Tablette abgeholt haben, sollte diese nach der ersten Einnahme, für eine Woche lang, regelmäßig eingenommen
+                werden. Innerhalb eines Monats wachsen die Flügel schmerzfrei aus ihrem Rücken.
+              </p>
+            </div>
 
-          <button class="accordion">Kann man den Prozess rückgängig machen?</button>
-          <div class="panel">
-            <p>
-              Wenn der Wunsch Flügel zu besitzen nachlässt, gibt es natürlich ein "Gegenmittel". Dieses besteht aus einer weiteren Tablette,
-              die ebenfalls eine Woche lang eingenommen wird und dafür sorgt, dass die Genmutation rückgängig gemacht wird.
-            </p>
+            <button class="accordion">Kann man den Prozess rückgängig machen?</button>
+            <div class="panel">
+              <p>
+                Wenn der Wunsch Flügel zu besitzen nachlässt, gibt es natürlich ein "Gegenmittel". Dieses besteht aus einer weiteren
+                Tablette, die ebenfalls eine Woche lang eingenommen wird und dafür sorgt, dass die Genmutation rückgängig gemacht wird.
+              </p>
+            </div>
+            <button class="accordion">Welcher Flügel stehen zur Auswahl?</button>
+            <div class="panel">
+              <p>
+                Sie haben die Wahl, welche Flügel Sie in den Himmel tragen sollen. Insgesamt kann man zwischen drei Flügelarten entscheiden.
+                Das Bronzepaket sind die Taubenflügel. Für unsere Kunden, die weniger Luftwiderstand und schnellere Flugreflexe besitzen
+                möchten, gibt es das Silber Paket mit den Raabenflügeln. Diejenigen, die auf Abenteuer stehen und Schnelligkeit, Ausdauer
+                sowie die Flughöhe auf einem maximalen Level erleben möchten, werden mit den Adlerflügeln im goldenen Paket eine neue Welt
+                entdecken.
+              </p>
+            </div>
           </div>
-          <button class="accordion">Welcher Flügel stehen zur Auswahl?</button>
-          <div class="panel">
-            <p>
-              Sie haben die Wahl, welche Flügel Sie in den Himmel tragen sollen. Insgesamt kann man zwischen drei Flügelarten entscheiden.
-              Das Bronzepaket sind die Taubenflügel. Für unsere Kunden, die weniger Luftwiderstand und schnellere Flugreflexe besitzen
-              möchten, gibt es das Silber Paket mit den Raabenflügeln. Diejenigen, die auf Abenteuer stehen und Schnelligkeit, Ausdauer
-              sowie die Flughöhe auf einem maximalen Level erleben möchten, werden mit den Adlerflügeln im goldenen Paket eine neue Welt
-              entdecken.
-            </p>
-          </div>
-        </div>
+        </section>
       </div>
     </main>
     <footer>
