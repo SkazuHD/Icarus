@@ -113,9 +113,10 @@ body {
 }
 .hero__sub {
   font-size: clamp(1.5rem, 4.25vw, 3.5rem);
-  color: rgb(255, 255, 255);
+  color: rgb(255, 89, 0);
   line-height: 1;
   transition: opacity 500ms linear;
+  font-weight: 400;
 }
 .fadeout {
   transition: opacity 1500ms linear;
