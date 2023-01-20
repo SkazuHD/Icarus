@@ -16,7 +16,7 @@ setInterval(function () {
   if (index == texte.length) {
     index = 0;
   }
-}, "8000");
+}, "6000");
 //FAQ
 var acc = document.getElementsByClassName("accordion");
 var i;
