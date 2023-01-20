@@ -15,6 +15,7 @@ svg {
 /*General*/
 :root {
   --color-accent: rgb(255, 89, 0);
+  --color-text: rgb(56, 56, 56);
 }
 html {
   scroll-behavior: smooth;
@@ -32,7 +33,7 @@ section {
 }
 .std-text {
   max-width: 52ch;
-  color: rgb(56, 56, 56);
+  color: var(--color-text);
   margin-bottom: 1rem;
   line-height: 1.15;
   font-weight: 300;
@@ -242,6 +243,9 @@ section {
     overflow-y: hidden;
     display: block;
   }
+  .grid-3-1 {
+    display: block !important;
+  }
 }
 .card-set {
   margin-block: 3rem;
@@ -291,6 +295,7 @@ section {
   content: "\2796";
 }
 .panel {
+  color: var(--color-text);
   padding: 0 18px;
   background-color: white;
   max-height: 0;
@@ -383,8 +388,28 @@ textarea {
   border: 1px solid var(--color-accent);
   transition: background-color 300ms linear;
 }
-.btn-submit:focus {
+.btn-submit:focus,
+.btn-buy:focus {
   outline: 1px solid black;
+}
+.btn-buy {
+  display: block;
+  width: 100%;
+  padding-block: 1em;
+  padding-inline: 1.8em;
+  font-size: 1.2rem;
+  background-color: hsl(120, 100%, 32%);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  border-color: hsl(120, 100%, 32%);
+  transition: all 250ms linear;
+  cursor: pointer;
+}
+.btn-buy:where(:hover, :focus) {
+  transition: all 250ms linear;
+  background-color: hsl(120, 100%, 38%);
+  border-color: hsl(120, 100%, 38%);
 }
 .slider {
   display: flex;
@@ -409,6 +434,7 @@ textarea {
 .slider-image {
   display: none;
 }
+
 .slider-image.active,
 .info-item.activeInfo {
   display: block;
@@ -416,6 +442,50 @@ textarea {
 }
 .info-item {
   display: none;
+}
+.info-item.activeInfo {
+  display: grid;
+  gap: 0.7rem;
+  background-color: rgb(234, 234, 234);
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+.info-item {
+  display: none;
+}
+.info-list {
+  margin-left: 1.5rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+.info-title {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.old-preis {
+  color: rgb(155, 155, 155);
+  font-size: 2rem;
+  text-decoration: line-through;
+  font-weight: 700;
+}
+.new-preis {
+  color: rgb(203, 0, 0);
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.preis {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  justify-content: end;
+  margin-block: 1rem;
+}
+.grid-3-1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 3rem;
+  margin-block: 10rem;
 }
 /* ::-webkit-scrollbar {
   display: none;
