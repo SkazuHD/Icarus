@@ -259,7 +259,8 @@ section {
   max-width: 100%;
 }
 #team {
-  margin-bottom: 20rem;
+  margin-bottom: 22rem;
+  padding-block: 5rem;
 }
 /*FAQ*/
 .accordion {
