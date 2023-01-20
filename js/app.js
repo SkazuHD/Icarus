@@ -1,9 +1,21 @@
 let heroText = document.getElementById("super");
 let cpYear = document.getElementById("cp-year");
 
+// Keep curent year in Footer
 let currentYear = new Date().getFullYear();
 cpYear.innerText = currentYear;
 
+//Navbar
+let nav = document.getElementById("nav-container");
+
+window.onscroll = function () {
+  if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200) {
+    nav.classList.remove("nav-transparent");
+  } else {
+    nav.classList.add("nav-transparent");
+  }
+};
+//Hero
 let texte = ["Lerne zu Fliegen !", "The Future is in the air !", "#LearnToFly", "Hol dir die Freiheit !"];
 let index = 0;
 setInterval(function () {
@@ -32,7 +44,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-//Product Slider
+//Product Slider and Info
 let slider_left = document.getElementById("slider-left");
 let slider_right = document.getElementById("slider-right");
 
